@@ -131,7 +131,7 @@
         for (int i = 0; i < orderedIndexes.count; i++) {
             NSInteger index = [[orderedIndexes objectAtIndex:i] integerValue];
             if (i == (orderedIndexes.count - 1)) {
-                title = [title stringByAppendingString:[NSString stringWithFormat:@" and %@", [thSegmentedControl titleForSegmentAtIndex:index]]];
+                title = [title stringByAppendingString:[NSString stringWithFormat:@" and %@!", [thSegmentedControl titleForSegmentAtIndex:index]]];
             } else {
                 if (orderedIndexes.count == 2) {
                     title = [title stringByAppendingString:[NSString stringWithFormat:@" %@", [thSegmentedControl titleForSegmentAtIndex:index]]];
@@ -142,7 +142,7 @@
         }
         self.thLabel.text = title;
     } else if (orderedIndexes.count == 1) {
-        self.thLabel.text = [NSString stringWithFormat:@"THSegmentedControl Says That Your Favorite iPhone Color is %@", [thSegmentedControl titleForSegmentAtIndex:[orderedIndexes.lastObject integerValue]]];
+        self.thLabel.text = [NSString stringWithFormat:@"THSegmentedControl Says That Your Favorite iPhone Color is %@!", [thSegmentedControl titleForSegmentAtIndex:[orderedIndexes.lastObject integerValue]]];
     } else {
         self.thLabel.text = @"You Don't Have A Favorite iPhone Color... :(";
     }
