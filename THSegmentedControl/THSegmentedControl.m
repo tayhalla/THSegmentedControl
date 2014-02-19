@@ -274,7 +274,6 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 - (void)ensureProperSeperatorColor
 {
     NSUInteger sentinelCount = [[self.selectedIndexes array] count]  - 1;
-    NSLog(@"%@", self.selectedIndexes);
     NSMutableSet *segmentSet = [[NSMutableSet alloc] initWithCapacity:self.selectedIndexes.count];
     
     [self.selectedIndexes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -374,7 +373,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     }];
     self.selectedIndexes = [mutableSelectedIndexes copy];
     [self ensureProperSeperatorColor];
-    [self sendActionsForControlEvents:UIControlEventTouchUpInside];
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
     
     
     return YES;

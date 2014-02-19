@@ -466,6 +466,7 @@
 				2488AAE41887128B00AB82D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2488AAE51887128B00AB82D1 /* Build configuration list for PBXNativeTarget "THSegmentedControlTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +475,7 @@
 				2488AAE71887128B00AB82D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

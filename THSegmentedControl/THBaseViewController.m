@@ -34,28 +34,31 @@
     
     CGFloat controlWidth            = self.view.bounds.size.width / 2.0f;
     CGFloat controlHeight           = 50.0f;
-    CGFloat controlMidVertOffset = 100.0f;
     
-    NSArray *segments = @[@"First", @"Second", @"Third", @"Fourth"];
+    NSArray *segments = @[@"White", @"Black", @"Gold"];
     
     self.baseControl = ({
         UISegmentedControl *segControl = [[UISegmentedControl alloc] initWithItems:segments];
-        CGRect frame = CGRectMake(self.view.bounds.size.width - (controlWidth / 2.0f),
-                                  (self.view.bounds.size.height / 2.0f) - controlMidVertOffset,
+        CGRect frame = CGRectMake((self.view.bounds.size.width - controlWidth) / 2.0f,
+                                  (self.view.bounds.size.height / 4.0f),
                                   controlWidth,
                                   controlHeight);
-        [segControl addTarget:self action:@selector(baseControlChangedSegment:) forControlEvents:UIControlEventTouchUpInside];
         [segControl setFrame:frame];
+        segControl.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
+        [segControl addTarget:self action:@selector(baseControlChangedSegment:) forControlEvents:UIControlEventValueChanged];
         segControl;
     });
+
     
     self.thControl = ({
         THSegmentedControl *thControl = [[THSegmentedControl alloc] initWithItems:segments];
-        CGRect frame = CGRectMake(self.view.bounds.size.width + (controlWidth / 2.0f),
-                                  (self.view.bounds.size.height / 2.0f) - controlMidVertOffset,
+        CGRect frame = CGRectMake((self.view.bounds.size.width - controlWidth) / 2.0f,
+                                  (self.view.bounds.size.height * 1.8f / 4.0f),
                                   controlWidth,
                                   controlHeight);
         [thControl setFrame:frame];
+        thControl.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
+        [thControl addTarget:self action:@selector(thControlChangedSegment:) forControlEvents:UIControlEventValueChanged];
         thControl;
     });
     
@@ -71,33 +74,35 @@
     UIFont *labelFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f];
     
     CGFloat labelHeight     = 50.0f;
-    CGFloat labelVertOffset = -10.0f;
+    CGFloat labelVertOffset = 20.0f;
     
     self.baseLabel = ({
         CGRect segmentedFrame = self.baseControl.frame;
-        CGRect frame = CGRectMake(segmentedFrame.origin.x,
+        CGRect frame = CGRectMake(self.view.bounds.origin.x,
                                   segmentedFrame.origin.y - labelVertOffset - labelHeight,
-                                  segmentedFrame.size.width,
+                                  self.view.bounds.size.width,
                                   labelHeight);
         
         UILabel *label = [[UILabel alloc] initWithFrame:frame];
         label.text = defaultText;
         [label setTextAlignment:NSTextAlignmentCenter];
         [label setFont:labelFont];
+        label.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
         label;
     });
     
     self.thLabel = ({
         CGRect segmentedFrame = self.thControl.frame;
-        CGRect frame = CGRectMake(segmentedFrame.origin.x,
+        CGRect frame = CGRectMake(self.view.bounds.origin.x,
                                   segmentedFrame.origin.y - labelVertOffset - labelHeight,
-                                  segmentedFrame.size.width,
+                                  self.view.bounds.size.width,
                                   labelHeight);
         
         UILabel *label = [[UILabel alloc] initWithFrame:frame];
         label.text = defaultText;
         [label setTextAlignment:NSTextAlignmentCenter];
         [label setFont:labelFont];
+        label.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
         label;
     });
     
@@ -110,15 +115,37 @@
 // Base Segmented Control Target
 - (void)baseControlChangedSegment:(UISegmentedControl *)baseSegmentedControl
 {
-    
-    NSString *labelText = [NSString stringWithFormat:@""]
-    
+    NSInteger selectedSegmentIndex = baseSegmentedControl.selectedSegmentIndex;
+    if (selectedSegmentIndex > -1) {
+        NSString *labelText = [NSString stringWithFormat:@"UISegmentedControl Says That Your Favorite iPhone Color is %@", [baseSegmentedControl titleForSegmentAtIndex:selectedSegmentIndex]];
+        self.baseLabel.text = labelText;
+    }
 }
 
 // THSegmented Control Target
 - (void)thControlChangedSegment:(THSegmentedControl *)thSegmentedControl
 {
-    
+    NSOrderedSet *orderedIndexes = thSegmentedControl.selectedIndexes;
+    if (orderedIndexes.count > 1) {
+        NSString *title = @"THSegmentedControl Says That Your Favorite iPhone Colors are";
+        for (int i = 0; i < orderedIndexes.count; i++) {
+            NSInteger index = [[orderedIndexes objectAtIndex:i] integerValue];
+            if (i == (orderedIndexes.count - 1)) {
+                title = [title stringByAppendingString:[NSString stringWithFormat:@" and %@", [thSegmentedControl titleForSegmentAtIndex:index]]];
+            } else {
+                if (orderedIndexes.count == 2) {
+                    title = [title stringByAppendingString:[NSString stringWithFormat:@" %@", [thSegmentedControl titleForSegmentAtIndex:index]]];
+                } else {
+                    title = [title stringByAppendingString:[NSString stringWithFormat:@" %@,", [thSegmentedControl titleForSegmentAtIndex:index]]];
+                }
+            }
+        }
+        self.thLabel.text = title;
+    } else if (orderedIndexes.count == 1) {
+        self.thLabel.text = [NSString stringWithFormat:@"THSegmentedControl Says That Your Favorite iPhone Color is %@", [thSegmentedControl titleForSegmentAtIndex:[orderedIndexes.lastObject integerValue]]];
+    } else {
+        self.thLabel.text = @"You Don't Have A Favorite iPhone Color... :(";
+    }
 }
 
 
