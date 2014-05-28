@@ -15,15 +15,13 @@ Pod::Spec.new do |s|
   s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Taylor Halliday" => "taylor.halliday@gmail.com" }
-  s.source           = { :git => "https://github.com/tayhalla/THSegmentedControl.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/tayhalla/THSegmentedControl.git", :commit => '8d3a72c1b01404e5741c4dc33405d40b30020906' }
+  s.source_files  = 'THSegmentedControl/*'
 
-  s.platform     = :ios, '5.0'
+  s.platform         = :ios, '5.0'
   s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
   # s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
   # s.dependency 'JSONKit', '~> 1.4'
