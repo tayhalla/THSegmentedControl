@@ -6,16 +6,17 @@
 #
 Pod::Spec.new do |s|
   s.name             = "THSegmentedControl"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "UISegmentedControl for multiple selection"
   s.description      = <<-DESC
   THSegmentedControl allows you to take in multiple selection and mirrors its next-of-kin, UISegmentedControl.
                        DESC
   s.homepage         = "https://github.com/tayhalla/THSegmentedControl"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots      = "https://raw.githubusercontent.com/tayhalla/THSegmentedControl/master/ReadmeAssets/THSegmentedControlStill.jpg"
   s.license          = 'MIT'
   s.author           = { "Taylor Halliday" => "taylor.halliday@gmail.com" }
-  s.source           = { :git => "https://github.com/tayhalla/THSegmentedControl.git", :commit => '8d3a72c1b01404e5741c4dc33405d40b30020906' }
+  s.source           = { :git => "https://github.com/tayhalla/THSegmentedControl.git", :tag => s.version }
+  s.source_files  = 'THSegmentedControl/*'
   s.source_files  = 'THSegmentedControl/*'
 
   s.platform         = :ios, '5.0'
