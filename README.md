@@ -1,8 +1,7 @@
 THSegmentedControl
 ========
 
-####Ever get tired of only being able to offer one selection with UISegmentedControl?
-####Me too.
+####Ever get tired of only being able to offer one selection with UISegmentedControl? Me too.
 
 ![](https://raw.githubusercontent.com/tayhalla/THSegmentedControl/0.1.1/ReadmeAssets/THSegmentedControlUse.gif)
 ###### Lame example. I know. Suggestions on other multiple selection content welcome
