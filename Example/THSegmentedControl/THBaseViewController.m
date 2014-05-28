@@ -58,7 +58,7 @@
                                   controlHeight);
         [thControl setFrame:frame];
         thControl.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
-        [thControl addTarget:self action:@selector(thControlChangedSegment:) forControlEvents:UIControlEventValueChanged];
+        [thControl addTarget:self action:@selector(thControlChangedSegment:) forControlEvents:UIControlEventValueChanged | UIControlEventTouchUpInside];
         thControl;
     });
     
@@ -175,6 +175,5 @@
         self.thLabel.text = @"You Don't Have A Favorite iPhone Color... :(";
     }
 }
-
 
 @end
