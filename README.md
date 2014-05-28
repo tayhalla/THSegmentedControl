@@ -29,7 +29,6 @@ for (int i = 0; i < segments.count; i++) {
 Sign up for some target action:
 ``` objc
 [thControl addTarget:self action:@selector(thControlChangedSegment:) forControlEvents:UIControlEventValueChanged | UIControlEventTouchUpInside];
-
 ```
 
 Profit:
