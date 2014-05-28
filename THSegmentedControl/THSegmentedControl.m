@@ -4,6 +4,27 @@
 //  Created by Taylor Halliday on 11/20/13.
 //  Copyright (c) 2013 5Celsius. All rights reserved.
 //
+//  This code is distributed under the terms and conditions of the MIT license.
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
+
 
 #import "THSegmentedControl.h"
 
@@ -29,10 +50,10 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 @interface THSegmentedControl () <THSegmentedControlSegmentDelegate>
 
-@property (nonatomic, strong) NSMutableArray *segments;
-@property (nonatomic, strong) NSMutableArray *segmentLabels;
-@property (nonatomic, strong) NSMutableArray *segmentSeperators;
-@property (nonatomic, strong) NSMutableOrderedSet *selectedIndexes;
+@property (nonatomic, strong) NSMutableArray      *segments;
+@property (nonatomic, strong) NSMutableArray      *segmentLabels;
+@property (nonatomic, strong) NSMutableArray      *segmentSeperators;
+@property (nonatomic, strong) NSMutableOrderedSet *selectedIndexSet;
 
 @end
 
@@ -45,23 +66,22 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 @property (readwrite, nonatomic, strong) UIColor    *segmentBackgroundColor;
 @property (readwrite, nonatomic, strong) UIColor    *highlightedSegmentBackgroundColor;
 @property (readwrite, nonatomic) NSInteger index;
-@property (readonly, nonatomic) BOOL selected;
+@property (nonatomic) BOOL selected;
 @property (nonatomic) id <THSegmentedControlSegmentDelegate> delegate;
 
 @end
-
 
 @implementation THSegmentedControl
 
 #pragma mark - THSegmentControl Init Methods
 
-- (instancetype)initWithItems:(NSArray *)items
+- (instancetype)initWithSegments:(NSArray *)segments
 {
     self = [super init];
     if (self) {
         [self commonInit];
-        for (int i = 0; i < items.count; i++) {
-            [self setTitle:items[i] forSegmentAtIndex:i];
+        for (int i = 0; i < segments.count; i++) {
+            [self insertSegmentWithTitle:segments[i] atIndex:i];
         }
     }
     return self;
@@ -109,15 +129,24 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 - (NSOrderedSet *)selectedIndexes
 {
-    if (_selectedIndexes) {
-        return [_selectedIndexes copy];
+    if (_selectedIndexSet) {
+        return [_selectedIndexSet copy];
     }
-    return nil;
+    return [[NSOrderedSet alloc] init];
+}
+
+- (void)setSelectedIndexes:(NSOrderedSet *)selectedIndexes
+{
+    if (!selectedIndexes) {
+        _selectedIndexSet = [[NSMutableOrderedSet alloc] init];
+    } else if (_selectedIndexSet != selectedIndexes) {
+        _selectedIndexSet = [selectedIndexes mutableCopy];
+    }
 }
 
 #pragma mark - THSegmentedControl Public Instance Methods
 
-- (void)setTitle:(NSString *)title forSegmentAtIndex:(NSUInteger)segment
+- (void)insertSegmentWithTitle:(NSString *)title atIndex:(NSUInteger)segment
 {
     while (segment > self.segments.count) {
         [self.segments insertObject:@"" atIndex:self.segments.count];
@@ -179,13 +208,14 @@ float const THSegmentedControlAnimationDuration = 0.1f;
         }
         
         for (int i = 0; i < self.segments.count; i++) {
-            [self layoutSectionWithIndex:i rect:modifiedRect];
+            [self layoutSectionWithIndex:i rect:modifiedRect selected:[self.selectedIndexes containsObject:[NSNumber numberWithInt:i]]];
         }
     }
+    [self ensureProperSeperatorColor];
 }
 
 
-- (void)layoutSectionWithIndex:(NSInteger)index rect:(CGRect)rect
+- (void)layoutSectionWithIndex:(NSInteger)index rect:(CGRect)rect selected:(BOOL)selected
 {
     // Segment Layout
     CGFloat xOrigin;
@@ -199,7 +229,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
         width = self.bounds.size.width - xOrigin;
     } else {
         if (index == 0) {
-            xOrigin = 0.0f; 
+            xOrigin = 0.0f;
         } else {
             UIView *previousSeperator = self.segmentSeperators[index - 1];
             xOrigin = previousSeperator ? previousSeperator.frame.origin.x + previousSeperator.frame.size.width : 0.0f;
@@ -210,6 +240,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     
     CGRect segFrame = CGRectMake(xOrigin, rect.origin.y, width, rect.size.height);
     THSegmentedControlSegment *segLabel = [self segmentLabelWithFrame:segFrame text:self.segments[index]];
+    segLabel.selected = selected;
     segLabel.index = index;
     [self addSubview:segLabel];
 }
@@ -228,7 +259,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 - (void)layoutSeperatorsWithIndex:(NSInteger)index rect:(CGRect)rect
 {
-
+    
     if ((index + 1) < self.segments.count) {
         int xOrigin = ((self.bounds.size.width / self.segments.count) * (index + 1)) - (0.5 * (float)THSegmentedControlSeperatorWidth);
         CGRect seperatorFrame = CGRectMake(xOrigin,
@@ -255,7 +286,6 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     return segmentWidth;
 }
 
-
 - (void)clearExistingSeperatorsAndLabels
 {
     for (UILabel *label in self.segmentLabels) {
@@ -266,7 +296,6 @@ float const THSegmentedControlAnimationDuration = 0.1f;
         [seperator removeFromSuperview];
     }
     
-    // Always good to guesstimate with capacity with mutable containers
     self.segmentLabels = [[NSMutableArray alloc] initWithCapacity:10];
     self.segmentSeperators = [[NSMutableArray alloc] initWithCapacity:10];
 }
@@ -291,8 +320,8 @@ float const THSegmentedControlAnimationDuration = 0.1f;
                                   delay:0.0
                                 options:UIViewAnimationOptionCurveEaseIn
                              animations:^{
-                seperatorView.backgroundColor = self.thSegmentedControlBackgroundColor;
-            } completion:nil];
+                                 seperatorView.backgroundColor = self.thSegmentedControlBackgroundColor;
+                             } completion:nil];
         } else if (!isIverted && ![seperatorView.backgroundColor isEqual:self.thSegmentedControlHighlightedBackgroundColor]) {
             [UIView animateWithDuration:THSegmentedControlAnimationDuration
                                   delay:0.0
@@ -355,8 +384,10 @@ float const THSegmentedControlAnimationDuration = 0.1f;
          toHighlight:(BOOL)highlighted
            withIndex:(NSInteger)index
 {
-    if ([self.delegate respondsToSelector:@selector(allowSegment:toHighlight:withIndex:)]) {
-        
+    [self sendActionsForControlEvents:UIControlEventTouchUpInside];
+    
+    if ([self.delegate respondsToSelector:@selector(allowSegmentWithIndex:toToggleAsSelected:)] && ![self.delegate allowSegmentWithIndex:index toToggleAsSelected:highlighted]) {
+        return NO;
     }
     
     NSMutableOrderedSet *mutableSelectedIndexes = [self.selectedIndexes mutableCopy];
@@ -365,7 +396,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     } else {
         [mutableSelectedIndexes removeObject:@(index)];
     }
-
+    
     [mutableSelectedIndexes sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
         NSNumber *pos1 = (NSNumber *)obj1;
         NSNumber *pos2 = (NSNumber *)obj2;
@@ -374,8 +405,6 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     self.selectedIndexes = [mutableSelectedIndexes copy];
     [self ensureProperSeperatorColor];
     [self sendActionsForControlEvents:UIControlEventValueChanged];
-    
-    
     return YES;
 }
 
@@ -387,7 +416,6 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 @property (nonatomic, strong) UILabel *textField;
 @property (nonatomic) CGRect boundingPreTouchRect;
 @property (nonatomic) BOOL preSelected;
-@property (nonatomic) BOOL selected;
 
 @end
 

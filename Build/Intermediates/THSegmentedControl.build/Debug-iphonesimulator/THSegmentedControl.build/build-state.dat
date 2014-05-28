@@ -1,0 +1,923 @@
+TTHSegmentedControl
+v6
+r1
+cCheck dependencies
+cDataModelVersionCompile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl.momd /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.xcdatamodeld
+cProcessPCH /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch.pch THSegmentedControl/THSegmentedControl-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl normal x86_64
+cCopyStringsFile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/en.lproj/InfoPlist.strings THSegmentedControl/en.lproj/InfoPlist.strings
+cCompileAssetCatalog /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/Images.xcassets
+cProcessInfoPlistFile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/Info.plist /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Info.plist
+cGenerateDSYMFile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app.dSYM /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl
+cTouch /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c000000005348171B0000000000000198
+t1397233435
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000532A006900000000000003B4
+t1395261545
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000532A007C000000000000019E
+t1395261564
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000532A0082000000000058E0E0
+t1395261570
+s5824736
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c00000000532A008300000000006CED60
+t1395261571
+s7138656
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000532A008200000000005B82F0
+t1395261570
+s5997296
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000534816FE0000000000446820
+t1397233406
+s4483104
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+c00000000532A008200000000003599D0
+t1395261570
+s3512784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+c00000000532A008300000000002FC3B0
+t1395261571
+s3130288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000532A0082000000000004B000
+t1395261570
+s307200
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000532A0086000000000088D8C0
+t1395261574
+s8968384
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c00000000532A00880000000000037680
+t1395261576
+s226944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000532A008A000000000048F720
+t1395261578
+s4781856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Security.framework/Security
+c00000000532A0089000000000013FD70
+t1395261577
+s1310064
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000532A00910000000001F1DE10
+t1395261585
+s32628240
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+c00000000532A00AC00000000002BC360
+t1395261612
+s2868064
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
+c00000000532A00BB0000000000002338
+t1395261627
+s9016
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
+c00000000532A00BD000000000008D370
+t1395261629
+s578416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
+c00000000532A00BC0000000000392E20
+t1395261628
+s3747360
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
+c00000000537E2E8C00000000000141F0
+t1400778380
+s82416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
+c00000000532A00BD0000000000014A80
+t1395261629
+s84608
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+c00000000532A00BD0000000000033BA0
+t1395261629
+s211872
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+c00000000532A00BD000000000001CFB0
+t1395261629
+s118704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
+c00000000532A00BD000000000001B2B0
+t1395261629
+s111280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
+c00000000532A00BD00000000000C9570
+t1395261629
+s824688
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
+c00000000532A00BD0000000000063280
+t1395261629
+s406144
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
+c00000000532A00BD0000000000008880
+t1395261629
+s34944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
+c00000000532A00BD0000000000015080
+t1395261629
+s86144
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
+c00000000532A00BD00000000000230F0
+t1395261629
+s143600
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
+c00000000532A00BD000000000000E380
+t1395261629
+s58240
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
+c00000000532A00BE0000000000089380
+t1395261630
+s562048
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
+c00000000532A00BD0000000000017320
+t1395261629
+s95008
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
+c00000000532A00BD0000000000039CD0
+t1395261629
+s236752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+c00000000532A00BD000000000000B0B0
+t1395261629
+s45232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
+c00000000532A00BE0000000000167E80
+t1395261630
+s1474176
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+c00000000532A00BE00000000000106A0
+t1395261630
+s67232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+c00000000532A00BE000000000001CE40
+t1395261630
+s118336
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
+c00000000532A00BE00000000000740C0
+t1395261630
+s475328
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
+c00000000532A00BE000000000006CA60
+t1395261630
+s445024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
+c00000000532A00BE000000000001BAD0
+t1395261630
+s113360
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
+c00000000532A00BE0000000000084A20
+t1395261630
+s543264
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000532A00FB0000000000000ADC
+t1395261691
+s2780
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+c00000000534816FE000000000000514C
+t1397233406
+s20812
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch.pch
+t1401302140
+s116908
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch.pch
+t1401301965
+s117652
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THAppDelegate.o
+t1401302140
+s77572
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THBaseViewController.o
+t1401302140
+s72968
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl-695A5517C05E3E5C.o
+t1401302140
+s142840
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl.LinkFileList
+c0000000053862C7B00000000000002BC
+t1401302139
+s700
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/main.o
+t1401302140
+s3600
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.o
+t1401301965
+s85072
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.o
+t1401306756
+s76272
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.o
+t1401303111
+s153204
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl.LinkFileList
+c0000000053862BCC00000000000002C4
+t1401301964
+s708
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.o
+t1401301965
+s3832
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/assetcatalog_dependencies.txt
+t1401301984
+s427
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/assetcatalog_generated_info.plist
+t1401301984
+s525
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app
+t1401306756
+s306
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app.dSYM
+t1401306406
+s102
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/Info.plist
+t1401302155
+s1058
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/PkgInfo
+t1401302155
+s8
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl
+t1401306756
+s106764
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl.momd
+t1401301964
+s170
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/en.lproj/InfoPlist.strings
+t1401301983
+s42
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/Images.xcassets
+c0000000052D6DB0A0000000000000088
+t1389812490
+s136
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.h
+c0000000052D6DB0A000000000000026F
+t1389812490
+s623
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m
+c0000000052D6DFEB0000000000001B49
+t1389813739
+s6985
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.h
+c0000000052D6DB2A00000000000000EE
+t1389812522
+s238
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m
+c0000000053863E840000000000002138
+t1401306756
+s8504
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Info.plist
+c0000000053862C8700000000000004CC
+t1401302151
+s1228
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Prefix.pch
+c0000000052D6DB0A000000000000017A
+t1389812490
+s378
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.h
+c0000000053862BC90000000000001589
+t1401301961
+s5513
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m
+c00000000538630470000000000005365
+t1401303111
+s21349
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.xcdatamodeld
+c0000000052D6DB0A0000000000000088
+t1389812490
+s136
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/en.lproj/InfoPlist.strings
+c0000000052D6DB0A000000000000002D
+t1389812490
+s45
+
+N/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m
+c0000000052D6DB0A0000000000000160
+t1389812490
+s352
+
+N/usr/lib/libSystem.B.dylib
+c00000000537E2E76000000000000E6D0
+t1400778358
+s59088
+
+N/usr/lib/system/libcache.dylib
+c000000005266ECCD0000000000012A00
+t1382477005
+s76288
+
+N/usr/lib/system/libcommonCrypto.dylib
+c000000005266ECAD000000000002E320
+t1382476973
+s189216
+
+N/usr/lib/system/libcompiler_rt.dylib
+c000000005266ECBD0000000000021860
+t1382476989
+s137312
+
+N/usr/lib/system/libcopyfile.dylib
+c000000005266ECCC000000000001B620
+t1382477004
+s112160
+
+N/usr/lib/system/libcorecrypto.dylib
+c000000005266ECCC00000000000BD920
+t1382477004
+s776480
+
+N/usr/lib/system/libdyld.dylib
+c00000000537E2E8C00000000000141F0
+t1400778380
+s82416
+
+N/usr/lib/system/libkeymgr.dylib
+c000000005266ECCD000000000000A120
+t1382477005
+s41248
+
+N/usr/lib/system/liblaunch.dylib
+c000000005311560E000000000001D550
+t1393645070
+s120144
+
+N/usr/lib/system/libmacho.dylib
+c000000005266ECCC0000000000014EE0
+t1382477004
+s85728
+
+N/usr/lib/system/libquarantine.dylib
+c000000005266ECCF0000000000010380
+t1382477007
+s66432
+
+N/usr/lib/system/libremovefile.dylib
+c000000005266ECCF000000000000C4C0
+t1382477007
+s50368
+
+N/usr/lib/system/libsystem_asl.dylib
+c000000005266ECCD00000000000357A0
+t1382477005
+s219040
+
+N/usr/lib/system/libsystem_blocks.dylib
+c000000005266ECCD000000000000C070
+t1382477005
+s49264
+
+N/usr/lib/system/libsystem_c.dylib
+c00000000530299D10000000000168D00
+t1392679377
+s1477888
+
+N/usr/lib/system/libsystem_configuration.dylib
+c00000000537E2E880000000000010630
+t1400778376
+s67120
+
+N/usr/lib/system/libsystem_dnssd.dylib
+c000000005311560E000000000001DF10
+t1393645070
+s122640
+
+N/usr/lib/system/libsystem_info.dylib
+c000000005266ECBD0000000000075B00
+t1382476989
+s482048
+
+N/usr/lib/system/libsystem_kernel.dylib
+c00000000537E2E76000000000007CD60
+t1400778358
+s511328
+
+N/usr/lib/system/libsystem_m.dylib
+c000000005266ECBD00000000000766C0
+t1382476989
+s485056
+
+N/usr/lib/system/libsystem_malloc.dylib
+c00000000530299D00000000000044DC0
+t1392679376
+s282048
+
+N/usr/lib/system/libsystem_notify.dylib
+c000000005266ECBD0000000000021FA0
+t1382476989
+s139168
+
+N/usr/lib/system/libsystem_platform.dylib
+c000000005311560E000000000002D920
+t1393645070
+s186656
+
+N/usr/lib/system/libsystem_pthread.dylib
+c000000005266ECCD000000000001E570
+t1382477005
+s124272
+
+N/usr/lib/system/libsystem_sandbox.dylib
+c00000000537E2E7F000000000000CC70
+t1400778367
+s52336
+
+N/usr/lib/system/libsystem_stats.dylib
+c00000000537E2E830000000000009A80
+t1400778371
+s39552
+
+N/usr/lib/system/libunc.dylib
+c000000005266ECC7000000000000C3F0
+t1382476999
+s50160
+
+N/usr/lib/system/libunwind.dylib
+c000000005266ECCD00000000000199F0
+t1382477005
+s104944
+
+CBuild AST from /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m
+r0
+
+CBuild AST from /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m
+r0
+
+CBuild AST from /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m
+r0
+
+CBuild AST from /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa03513047636b941^52611c047636b941^---0#1#1#--18"Check dependencies36"202BBD9A-5859-4200-82F7-1A2B92B9806A-
+
+CCompileAssetCatalog /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/Images.xcassets
+s422994783.531606
+e422994784.297429
+r1
+xCompileAssetCatalog
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/Images.xcassets
+o/* com.apple.actool.compilation-results */
+o/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/LaunchImage-700-568h@2x.png
+o/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/Assets.car
+o/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/assetcatalog_generated_info.plist
+o
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"CompileAssetCatalog Build/Products/Debug-iphonesimulator/THSegmentedControl.app THSegmentedControl/Images.xcassets114"CompileAssetCatalog Build/Products/Debug-iphonesimulator/THSegmentedControl.app THSegmentedControl/Images.xcassets7d25885f6336b941^81244c606336b941^-455"/* com.apple.actool.compilation-results *//Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/LaunchImage-700-568h@2x.png/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/Assets.car/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/assetcatalog_generated_info.plist-0#0#1#-19%DVTDocumentLocation2@84"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/Images.xcassets/0000000000000000^1262"CompileAssetCatalog Build/Products/Debug-iphonesimulator/THSegmentedControl.app THSegmentedControl/Images.xcassets    cd /Users/Tayhalla/iosdev/THSegmentedControl    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/assetcatalog_generated_info.plist --app-icon AppIcon --launch-image LaunchImage --platform iphonesimulator --minimum-deployment-target 7.0 --target-device iphone --target-device ipad --compress-pngs --compile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/Images.xcassets36"2374E87B-865D-4B26-92DD-88DD8C8545CF-
+bF32D7C0F-3411-4F3E-B667-E3C04FFD7C8E
+
+CCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THAppDelegate.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422994940.263599
+e422994940.340773
+r1
+xCompileC
+xBuild/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THAppDelegate.o
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.h
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m239"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THAppDelegate.o THSegmentedControl/THAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf38e43fc6336b941^533f57fc6336b941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m0000000000000000^4004"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THAppDelegate.o THSegmentedControl/THAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/i386 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -include /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THAppDelegate.d --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THAppDelegate.dia -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THAppDelegate.o36"9D02576B-A34D-44A2-846C-4028C18F0329-
+b1A2F6B7E-FAA0-48EC-A646-41030E5409ED
+
+CCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THBaseViewController.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422994940.264281
+e422994940.341397
+r1
+xCompileC
+xBuild/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THBaseViewController.o
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.h
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m253"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THBaseViewController.o THSegmentedControl/THBaseViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbec143fc6336b941^386857fc6336b941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m0000000000000000^4046"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THBaseViewController.o THSegmentedControl/THBaseViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/i386 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -include /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THBaseViewController.d --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THBaseViewController.dia -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THBaseViewController.o36"AA26E215-DB1F-4E53-96ED-CDD2021497A6-
+b1A2F6B7E-FAA0-48EC-A646-41030E5409ED
+
+CCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl-695A5517C05E3E5C.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422994940.264014
+e422994940.381218
+r1
+xCompileC
+xBuild/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl-695A5517C05E3E5C.o
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m266"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl-695A5517C05E3E5C.o THSegmentedControl/THSegmentedControl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf7b043fc6336b941^ed9961fc6336b941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m0000000000000000^4102"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl-695A5517C05E3E5C.o THSegmentedControl/THSegmentedControl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/i386 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -include /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl-695A5517C05E3E5C.d --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl-695A5517C05E3E5C.dia -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl-695A5517C05E3E5C.o36"A81248ED-2BB0-4E96-BD9D-30706C37111F-
+b1A2F6B7E-FAA0-48EC-A646-41030E5409ED
+
+CCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/main.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422994940.263815
+e422994940.295874
+r1
+xCompileC
+xBuild/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/main.o
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m221"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/main.o THSegmentedControl/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilered9b43fc6336b941^94bf4bfc6336b941^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m0000000000000000^3950"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/main.o THSegmentedControl/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/i386 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -include /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/main.dia -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/main.o36"22F33026-7E18-42A3-9125-BF05D1A2E299-
+b1A2F6B7E-FAA0-48EC-A646-41030E5409ED
+
+CCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422994765.269905
+e422994765.440755
+r1
+xCompileC
+xBuild/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.o
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.h
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m243"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.o THSegmentedControl/THAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerad30454d6336b941^9dd7704d6336b941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m0000000000000000^4018"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.o THSegmentedControl/THAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/x86_64 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -include /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.d --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.dia -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.m -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.o36"C5040D33-F48E-4AEE-A432-1BC04F47F5F2-
+b2E20D593-F315-4007-AEA5-C3322A9B41AE
+
+CCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422999556.104494
+e422999556.173454
+r1
+xCompileC
+xBuild/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.o
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.h
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m257"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.o THSegmentedControl/THBaseViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerddd21a047636b941^d7692c047636b941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m0000000000000000^4060"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.o THSegmentedControl/THBaseViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/x86_64 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -include /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.d --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.dia -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THBaseViewController.m -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.o36"490E65CE-C863-439B-A076-2957CF9F3CC2-
+b6A000A18-A3BF-484B-8E80-8317B0F4C559
+
+CCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422995911.880834
+e422995911.990307
+r1
+xCompileC
+xBuild/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.o
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m270"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.o THSegmentedControl/THSegmentedControl.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler9b91e1c76736b941^3486fdc76736b941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m0000000000000000^4116"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.o THSegmentedControl/THSegmentedControl.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/x86_64 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -include /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.d --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.dia -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.m -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.o36"B11AB7F3-96BA-4388-82F7-DBF3EDF412F2-
+bF79AA2BC-71E5-4D6D-AA38-12014B1C5F35
+
+CCompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.o /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422994765.283133
+e422994765.324191
+r1
+xCompileC
+xBuild/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.o
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THAppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m225"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.o THSegmentedControl/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilera793484d6336b941^bd00534d6336b941^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m0000000000000000^3964"CompileC Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.o THSegmentedControl/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/x86_64 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -include /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.dia -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/main.m -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.o36"56A3BFE5-D385-46C9-8DF8-A112E433877E-
+b2E20D593-F315-4007-AEA5-C3322A9B41AE
+
+CCopyStringsFile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/en.lproj/InfoPlist.strings THSegmentedControl/en.lproj/InfoPlist.strings
+s422994783.531294
+e422994783.532362
+r1
+xCopyStringsFile
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/en.lproj/InfoPlist.strings
+xTHSegmentedControl/en.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy THSegmentedControl/en.lproj/InfoPlist.strings148"CopyStringsFile Build/Products/Debug-iphonesimulator/THSegmentedControl.app/en.lproj/InfoPlist.strings THSegmentedControl/en.lproj/InfoPlist.strings6118885f6336b941^cb49885f6336b941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/en.lproj/InfoPlist.strings0000000000000000^643"CopyStringsFile Build/Products/Debug-iphonesimulator/THSegmentedControl.app/en.lproj/InfoPlist.strings THSegmentedControl/en.lproj/InfoPlist.strings    cd /Users/Tayhalla/iosdev/THSegmentedControl    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/en.lproj -- THSegmentedControl/en.lproj/InfoPlist.strings36"C77252E6-11D5-4317-AB11-2114DA4E9913-
+bF32D7C0F-3411-4F3E-B667-E3C04FFD7C8E
+
+CDataModelVersionCompile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl.momd /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.xcdatamodeld
+s422994764.243288
+e422994764.446627
+r1
+xDataModelVersionCompile
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl.momd
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.xcdatamodeld
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection158"DataModelVersionCompile Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl.momd THSegmentedControl/THSegmentedControl.xcdatamodeld158"DataModelVersionCompile Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl.momd THSegmentedControl/THSegmentedControl.xcdatamodeld909e3e4c6336b941^9fae724c6336b941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.xcdatamodeld/0000000000000000^978"DataModelVersionCompile Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl.momd THSegmentedControl/THSegmentedControl.xcdatamodeld    cd /Users/Tayhalla/iosdev/THSegmentedControl    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -XD_MOMC_IOS_TARGET_VERSION=7.0 -MOMC_PLATFORMS iphonesimulator -MOMC_PLATFORMS iphoneos -XD_MOMC_TARGET_VERSION=10.6 /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl.xcdatamodeld /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl.momd36"8A520922-1BB9-43FB-9D4A-AF354514B65C-
+b2E20D593-F315-4007-AEA5-C3322A9B41AE
+
+CGenerateDSYMFile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app.dSYM /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl
+s422999556.205124
+e422999556.232827
+r1
+xGenerateDSYMFile
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app.dSYM
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Generate /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app.dSYM160"GenerateDSYMFile Build/Products/Debug-iphonesimulator/THSegmentedControl.app.dSYM Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl478e34047636b941^aa9b3b047636b941^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app.dSYM/0000000000000000^736"GenerateDSYMFile Build/Products/Debug-iphonesimulator/THSegmentedControl.app.dSYM Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl    cd /Users/Tayhalla/iosdev/THSegmentedControl    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app.dSYM36"830FCF18-49FD-4B3D-BE97-E0DD4FE7EBDD-
+b6A000A18-A3BF-484B-8E80-8317B0F4C559
+
+CLd /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl normal i386
+s422994940.382233
+e422994940.414214
+r1
+xLd
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl
+xnormal
+xi386
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THAppDelegate.o
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/main.o
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl-695A5517C05E3E5C.o
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THBaseViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Link /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl93"Ld Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl normal i38689ea61fc6336b941^740a6afc6336b941^---0#0#1#--1537"Ld Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl normal i386    cd /Users/Tayhalla/iosdev/THSegmentedControl    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -filelist /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework CoreGraphics -framework CoreData -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/i386/THSegmentedControl_dependency_info.dat -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl36"5EF9172C-891A-4908-BEFE-C6A9E0C73E6B-
+b1A2F6B7E-FAA0-48EC-A646-41030E5409ED
+
+CLd /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl normal x86_64
+s422999556.175515
+e422999556.203807
+r1
+xLd
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl
+xnormal
+xx86_64
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THAppDelegate.o
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/main.o
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl-695A5517C05E3E5C.o
+d/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THBaseViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libsystem_stats.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Link /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl95"Ld Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl normal x86_64f8fc2c047636b941^6b2d34047636b941^---0#0#1#--1545"Ld Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl normal x86_64    cd /Users/Tayhalla/iosdev/THSegmentedControl    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator -filelist /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework CoreGraphics -framework CoreData -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/Objects-normal/x86_64/THSegmentedControl_dependency_info.dat -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/THSegmentedControl36"5A5C4321-B836-406D-BB42-D977C9F761BE-
+b6A000A18-A3BF-484B-8E80-8317B0F4C559
+
+CProcessInfoPlistFile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/Info.plist /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Info.plist
+s422994955.373983
+e422994955.375784
+r1
+xProcessInfoPlistFile
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/Info.plist
+x/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Process /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Info.plist140"ProcessInfoPlistFile Build/Products/Debug-iphonesimulator/THSegmentedControl.app/Info.plist THSegmentedControl/THSegmentedControl-Info.plist74ce5f0b6436b941^1a34600b6436b941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Info.plist0000000000000000^996"ProcessInfoPlistFile Build/Products/Debug-iphonesimulator/THSegmentedControl.app/Info.plist THSegmentedControl/THSegmentedControl-Info.plist    cd /Users/Tayhalla/iosdev/THSegmentedControl    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Info.plist -genpkginfo /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/assetcatalog_generated_info.plist -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app/Info.plist36"649B18B7-091E-4FD5-8F0B-E96C125C535B-
+b8354095F-21E3-4016-95DC-BE7B0BDC197D
+
+CProcessPCH /Users/Tayhalla/Library/Developer/Xcode/DerivedData/THSegmentedControl-bauivmtrsjaiscgmobjhihaswufq/Index/PrecompiledHeaders/THSegmentedControl-Prefix-gxskyhsybgnecicrtpjunsvttakc_ast/THSegmentedControl-Prefix.pch.pch THSegmentedControl/THSegmentedControl-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Tayhalla/Library/Developer/Xcode/DerivedData/THSegmentedControl-bauivmtrsjaiscgmobjhihaswufq/Index/PrecompiledHeaders/THSegmentedControl-Prefix-gxwixvoukxovlyeqdnbccidtnjvb_ast/THSegmentedControl-Prefix.pch.pch THSegmentedControl/THSegmentedControl-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch.pch THSegmentedControl/THSegmentedControl-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422994939.353590
+e422994940.263043
+r1
+xProcessPCH
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch.pch
+xTHSegmentedControl/THSegmentedControl-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Precompile THSegmentedControl/THSegmentedControl-Prefix.pch255"ProcessPCH Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch.pch THSegmentedControl/THSegmentedControl-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler31955afb6336b941^475943fc6336b941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Prefix.pch0000000000000000^3862"ProcessPCH Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch.pch THSegmentedControl/THSegmentedControl-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/i386 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch.dia -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch.d -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Prefix.pch -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-akounvbpxgdqiidxjiuujrginydz/THSegmentedControl-Prefix.pch.pch36"2869ED69-2D69-4A3E-8637-FDD78B07A327-
+b1A2F6B7E-FAA0-48EC-A646-41030E5409ED
+
+CProcessPCH /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch.pch THSegmentedControl/THSegmentedControl-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422994764.243981
+e422994765.269047
+r1
+xProcessPCH
+x/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch.pch
+xTHSegmentedControl/THSegmentedControl-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Precompile THSegmentedControl/THSegmentedControl-Prefix.pch257"ProcessPCH Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch.pch THSegmentedControl/THSegmentedControl-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerca8d3e4c6336b941^b9fb444d6336b941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Prefix.pch0000000000000000^3868"ProcessPCH Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch.pch THSegmentedControl/THSegmentedControl-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tayhalla/iosdev/THSegmentedControl    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Tayhalla/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-generated-files.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-own-target-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-all-target-headers.hmap -iquote /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/THSegmentedControl-project-headers.hmap -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources/x86_64 -I/Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/THSegmentedControl.build/Debug-iphonesimulator/THSegmentedControl.build/DerivedSources -F/Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch.dia -MMD -MT dependencies -MF /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch.d -c /Users/Tayhalla/iosdev/THSegmentedControl/THSegmentedControl/THSegmentedControl-Prefix.pch -o /Users/Tayhalla/iosdev/THSegmentedControl/Build/Intermediates/PrecompiledHeaders/THSegmentedControl-Prefix-bskwhdhnolkcvxgsyolfmnfaomrz/THSegmentedControl-Prefix.pch.pch36"1E14CC8E-E09B-46D9-84DE-F1ACFB718DF4-
+b2E20D593-F315-4007-AEA5-C3322A9B41AE
+
+CTouch /Users/Tayhalla/iosdev/THSegmentedControl/Build/Products/Debug-iphonesimulator/THSegmentedControl.app
+r0
+
