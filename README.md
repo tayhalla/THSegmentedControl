@@ -13,22 +13,22 @@ THSegmentedControl
 ##Usage
 Alloc/Init it just like you would a normal UISegmentedControl:
 ``` objc
-    NSArray *segments = @[@"White", @"Black", @"Gold"];
-    THSegmentedControl *thControl = [[THSegmentedControl alloc] initWithSegments:segments];
+NSArray *segments = @[@"White", @"Black", @"Gold"];
+THSegmentedControl *thControl = [[THSegmentedControl alloc] initWithSegments:segments];
 
 // OR
 
-    NSArray *segments = @[@"White", @"Black", @"Gold"];
-    THSegmentedControl *thControl = [[THSegmentedControl alloc] init];
+NSArray *segments = @[@"White", @"Black", @"Gold"];
+THSegmentedControl *thControl = [[THSegmentedControl alloc] init];
 
-    for (int i = 0; i < segments.count; i++) {
-      [thControl insertSegmentWithTitle:segments[i] atIndex:i];
-    }
+for (int i = 0; i < segments.count; i++) {
+  [thControl insertSegmentWithTitle:segments[i] atIndex:i];
+}
 ```
 
 Sign up for some target action:
 ``` objc
-    [thControl addTarget:self action:@selector(thControlChangedSegment:) forControlEvents:UIControlEventValueChanged | UIControlEventTouchUpInside];
+[thControl addTarget:self action:@selector(thControlChangedSegment:) forControlEvents:UIControlEventValueChanged | UIControlEventTouchUpInside];
 
 ```
 
