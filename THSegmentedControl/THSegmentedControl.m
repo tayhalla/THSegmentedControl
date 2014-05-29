@@ -63,8 +63,8 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 @property (readwrite, nonatomic, strong) NSString   *title;
 @property (readwrite, nonatomic, strong) UIFont     *font;
-@property (readwrite, nonatomic, strong) UIColor    *segmentBackgroundColor;
-@property (readwrite, nonatomic, strong) UIColor    *highlightedSegmentBackgroundColor;
+@property (readwrite, nonatomic, strong) UIColor    *backgroundColor;
+@property (readwrite, nonatomic, strong) UIColor    *highlightedBackgroundColor;
 @property (readwrite, nonatomic) NSInteger index;
 @property (nonatomic) BOOL selected;
 @property (nonatomic) id <THSegmentedControlSegmentDelegate> delegate;
@@ -117,11 +117,12 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 - (void)commonInit
 {
     self.backgroundColor = [UIColor clearColor];
+    self.opaque = NO;
     self.segments = [[NSMutableArray alloc] initWithCapacity:10];
     self.selectedIndexes = [[NSMutableOrderedSet alloc] initWithCapacity:10];
     self.clipsToBounds = YES;
     self.layer.cornerRadius = 4.0f;
-    self.layer.borderColor = self.thSegmentedControlHighlightedBackgroundColor.CGColor;
+    self.layer.borderColor = self.highlightedBackgroundColor.CGColor;
     self.layer.borderWidth = 1.0f;
 }
 
@@ -196,6 +197,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 - (void)drawRect:(CGRect)rect
 {
+    [super drawRect:rect];
     if (self.segments.count > 0) {
         CGRect modifiedRect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width - (self.segments.count - 1), rect.size.height);
         [self clearExistingSeperatorsAndLabels];
@@ -213,7 +215,6 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     }
     [self ensureProperSeperatorColor];
 }
-
 
 - (void)layoutSectionWithIndex:(NSInteger)index rect:(CGRect)rect selected:(BOOL)selected
 {
@@ -250,10 +251,10 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 {
     THSegmentedControlSegment *segLabel = [[THSegmentedControlSegment alloc] initWithFrame:frame];
     segLabel.title = text;
-    segLabel.segmentBackgroundColor = self.thSegmentedControlBackgroundColor;
-    segLabel.highlightedSegmentBackgroundColor = self.thSegmentedControlHighlightedBackgroundColor;
+    segLabel.backgroundColor = self.backgroundColor;
+    segLabel.highlightedBackgroundColor = self.highlightedBackgroundColor;
     segLabel.delegate = self;
-    [segLabel setFont:self.thSegmentedControlSegmentTextFont];
+    [segLabel setFont:self.font];
     return segLabel;
 }
 
@@ -275,7 +276,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 - (UIView *)segmentSeperatorWithFrame:(CGRect)seperatorFrame
 {
     UIView *segSeperator = [[UIView alloc] initWithFrame:seperatorFrame];
-    segSeperator.backgroundColor = self.thSegmentedControlHighlightedBackgroundColor;
+    segSeperator.backgroundColor = self.highlightedBackgroundColor;
     return segSeperator;
 }
 
@@ -315,19 +316,19 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     for (int i = 0; i < self.segmentSeperators.count; i++) {
         UIView *seperatorView = self.segmentSeperators[i];
         BOOL isIverted = [segmentSet containsObject:@(i)];
-        if (isIverted && ![seperatorView.backgroundColor isEqual:self.thSegmentedControlBackgroundColor]) {
+        if (isIverted && ![seperatorView.backgroundColor isEqual:self.backgroundColor]) {
             [UIView animateWithDuration:THSegmentedControlAnimationDuration
                                   delay:0.0
                                 options:UIViewAnimationOptionCurveEaseIn
                              animations:^{
-                                 seperatorView.backgroundColor = self.thSegmentedControlBackgroundColor;
+                                 seperatorView.backgroundColor = self.backgroundColor;
                              } completion:nil];
-        } else if (!isIverted && ![seperatorView.backgroundColor isEqual:self.thSegmentedControlHighlightedBackgroundColor]) {
+        } else if (!isIverted && ![seperatorView.backgroundColor isEqual:self.highlightedBackgroundColor]) {
             [UIView animateWithDuration:THSegmentedControlAnimationDuration
                                   delay:0.0
                                 options:UIViewAnimationOptionCurveEaseIn
                              animations:^{
-                                 seperatorView.backgroundColor = self.thSegmentedControlHighlightedBackgroundColor;
+                                 seperatorView.backgroundColor = self.highlightedBackgroundColor;
                              } completion:nil];
         }
     }
@@ -342,38 +343,38 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 #pragma mark - UIAppearance Getters w/ Appearance Proxy
 
-- (UIColor *)thSegmentedControlBackgroundColor {
+- (UIColor *)backgroundColor {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 50000
-    if(_thSegmentedControlBackgroundColor == nil) {
-        _thSegmentedControlBackgroundColor = [[[self class] appearance] thSegmentedControlBackgroundColor];
+    if(_backgroundColor == nil) {
+        _backgroundColor = [[[self class] appearance] backgroundColor];
     }
 #endif
-    if(_thSegmentedControlBackgroundColor != nil) {
-        return _thSegmentedControlBackgroundColor;
+    if(_backgroundColor != nil) {
+        return _backgroundColor;
     }
     return [UIColor whiteColor];
 }
 
-- (UIColor *)thSegmentedControlHighlightedBackgroundColor {
+- (UIColor *)highlightedBackgroundColor {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 50000
-    if(_thSegmentedControlHighlightedBackgroundColor == nil) {
-        _thSegmentedControlHighlightedBackgroundColor = [[[self class] appearance] thSegmentedControlHighlightedBackgroundColor];
+    if(_highlightedBackgroundColor == nil) {
+        _highlightedBackgroundColor = [[[self class] appearance] highlightedBackgroundColor];
     }
 #endif
-    if(_thSegmentedControlHighlightedBackgroundColor != nil) {
-        return _thSegmentedControlHighlightedBackgroundColor;
+    if(_highlightedBackgroundColor != nil) {
+        return _highlightedBackgroundColor;
     }
     return [UIColor colorWithRed:0.0f green:(122.0f/255.0f) blue:(255.0f/255.0f) alpha:1.0f];
 }
 
-- (UIFont *)thSegmentedControlSegmentTextFont {
+- (UIFont *)font {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 50000
-    if(_thSegmentedControlSegmentTextFont == nil) {
-        _thSegmentedControlSegmentTextFont = [[[self class] appearance] thSegmentedControlSegmentTextFont];
+    if(_font == nil) {
+        _font = [[[self class] appearance] font];
     }
 #endif
-    if(_thSegmentedControlSegmentTextFont != nil) {
-        return _thSegmentedControlSegmentTextFont;
+    if(_font != nil) {
+        return _font;
     }
     return [UIFont fontWithName:@"HelveticaNeue-Light" size:14.0f];
 }
@@ -489,19 +490,19 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 #pragma mark - Appearance Setters
 
-- (void)setSegmentBackgroundColor:(UIColor *)segmentBackgroundColor
+- (void)setBackgroundColor:(UIColor *)backgroundColor
 {
-    if (_segmentBackgroundColor != segmentBackgroundColor) {
-        _segmentBackgroundColor = segmentBackgroundColor;
-        if (self.selected) self.textField.textColor = segmentBackgroundColor;
+    if (_backgroundColor != backgroundColor) {
+        _backgroundColor = backgroundColor;
+        if (self.selected) self.textField.textColor = backgroundColor;
     }
 }
 
-- (void)setHighlightedSegmentBackgroundColor:(UIColor *)highlightedSegmentBackgroundColor
+- (void)setHighlightedBackgroundColor:(UIColor *)highlightedBackgroundColor
 {
-    if (_highlightedSegmentBackgroundColor != highlightedSegmentBackgroundColor) {
-        _highlightedSegmentBackgroundColor = highlightedSegmentBackgroundColor;
-        if (!self.selected) self.textField.textColor = highlightedSegmentBackgroundColor;
+    if (_highlightedBackgroundColor != highlightedBackgroundColor) {
+        _highlightedBackgroundColor = highlightedBackgroundColor;
+        if (!self.selected) self.textField.textColor = highlightedBackgroundColor;
     }
 }
 
@@ -575,14 +576,14 @@ float const THSegmentedControlAnimationDuration = 0.1f;
         CGFloat toBlue = 0.0f;
         CGFloat toGreen = 0.0f;
         
-        [self.highlightedSegmentBackgroundColor getRed:&toRed green:&toGreen blue:&toBlue alpha:&toAlpha];
+        [self.highlightedBackgroundColor getRed:&toRed green:&toGreen blue:&toBlue alpha:&toAlpha];
         self.backgroundColor = [UIColor colorWithRed:toRed
                                                green:toGreen
                                                 blue:toBlue
                                                alpha:(float)[self colorWithFromValue:fromAlpha toValue:toAlpha]];
     } else {
         self.preSelected = NO;
-        UIColor *toColor = self.selected ? self.highlightedSegmentBackgroundColor : self.segmentBackgroundColor;
+        UIColor *toColor = self.selected ? self.highlightedBackgroundColor : self.backgroundColor;
         self.backgroundColor = toColor;
     }
 }
@@ -612,16 +613,16 @@ float const THSegmentedControlAnimationDuration = 0.1f;
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
-                             self.backgroundColor = self.highlightedSegmentBackgroundColor;
-                             self.textField.textColor = self.segmentBackgroundColor;
+                             self.backgroundColor = self.highlightedBackgroundColor;
+                             self.textField.textColor = self.backgroundColor;
                          } completion:nil];
     } else {
         [UIView animateWithDuration:THSegmentedControlAnimationDuration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
-                             self.backgroundColor = self.segmentBackgroundColor;
-                             self.textField.textColor = self.highlightedSegmentBackgroundColor;
+                             self.backgroundColor = self.backgroundColor;
+                             self.textField.textColor = self.backgroundColor;
                          } completion:nil];
     }
 }

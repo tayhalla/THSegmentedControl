@@ -80,17 +80,17 @@
 /**
  Background color of unselected cells. The inverse of this color will be the font color within the cell.
  */
-@property (readwrite, nonatomic, strong) UIColor *thSegmentedControlBackgroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
+@property (readwrite, nonatomic, strong) UIColor *backgroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 
 /**
  Background color of selected cells. The inverse of this color will be the font color within the cell.
  */
-@property (readwrite, nonatomic, strong) UIColor *thSegmentedControlHighlightedBackgroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
+@property (readwrite, nonatomic, strong) UIColor *highlightedBackgroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 
 /**
  UIFont to be used withing cells
  */
-@property (readwrite, nonatomic, strong) UIFont *thSegmentedControlSegmentTextFont NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
+@property (readwrite, nonatomic, strong) UIFont *font NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 
 
 ///-------------------------------
