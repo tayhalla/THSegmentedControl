@@ -85,7 +85,7 @@
 /**
  Background color of selected cells. The inverse of this color will be the font color within the cell.
  */
-@property (readwrite, nonatomic, strong) UIColor *highlightedBackgroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
+@property (readwrite, nonatomic, strong) UIColor *tintColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 
 /**
  UIFont to be used withing cells

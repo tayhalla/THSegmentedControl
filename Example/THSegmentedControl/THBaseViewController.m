@@ -24,7 +24,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self initSegments];
     [self initLabels];
 }
@@ -59,7 +59,7 @@
         [thControl setFrame:frame];
         thControl.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
         [thControl addTarget:self action:@selector(thControlChangedSegment:) forControlEvents:UIControlEventValueChanged | UIControlEventTouchUpInside];
-        [thControl setBackgroundColor:[UIColor greenColor]];
+        [thControl setTintColor:[UIColor greenColor]];
         thControl;
     });
     
@@ -154,7 +154,6 @@
 // THSegmented Control Target
 - (void)thControlChangedSegment:(THSegmentedControl *)thSegmentedControl
 {
-    thSegmentedControl.backgroundColor = [UIColor yellowColor];
     NSOrderedSet *orderedIndexes = thSegmentedControl.selectedIndexes;
     if (orderedIndexes.count > 1) {
         NSString *title = @"THSegmentedControl Says That Your Favorite iPhone Colors are";

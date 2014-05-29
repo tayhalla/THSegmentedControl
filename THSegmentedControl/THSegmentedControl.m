@@ -63,8 +63,8 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 @property (readwrite, nonatomic, strong) NSString   *title;
 @property (readwrite, nonatomic, strong) UIFont     *font;
-@property (readwrite, nonatomic, strong) UIColor    *backgroundColor;
-@property (readwrite, nonatomic, strong) UIColor    *highlightedBackgroundColor;
+@property (readwrite, nonatomic, strong) UIColor    *segmentBackgroundColor;
+@property (readwrite, nonatomic, strong) UIColor    *segmentHighlightedBackgroundColor;
 @property (readwrite, nonatomic) NSInteger index;
 @property (nonatomic) BOOL selected;
 @property (nonatomic) id <THSegmentedControlSegmentDelegate> delegate;
@@ -72,6 +72,8 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 @end
 
 @implementation THSegmentedControl
+
+@synthesize tintColor = _tintColor;
 
 #pragma mark - THSegmentControl Init Methods
 
@@ -122,7 +124,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     self.selectedIndexes = [[NSMutableOrderedSet alloc] initWithCapacity:10];
     self.clipsToBounds = YES;
     self.layer.cornerRadius = 4.0f;
-    self.layer.borderColor = self.highlightedBackgroundColor.CGColor;
+    self.layer.borderColor = self.tintColor.CGColor;
     self.layer.borderWidth = 1.0f;
 }
 
@@ -251,8 +253,9 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 {
     THSegmentedControlSegment *segLabel = [[THSegmentedControlSegment alloc] initWithFrame:frame];
     segLabel.title = text;
-    segLabel.backgroundColor = self.backgroundColor;
-    segLabel.highlightedBackgroundColor = self.highlightedBackgroundColor;
+    
+    segLabel.segmentBackgroundColor = self.backgroundColor;
+    segLabel.segmentHighlightedBackgroundColor = self.tintColor;
     segLabel.delegate = self;
     [segLabel setFont:self.font];
     return segLabel;
@@ -276,7 +279,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 - (UIView *)segmentSeperatorWithFrame:(CGRect)seperatorFrame
 {
     UIView *segSeperator = [[UIView alloc] initWithFrame:seperatorFrame];
-    segSeperator.backgroundColor = self.highlightedBackgroundColor;
+    segSeperator.backgroundColor = self.tintColor;
     return segSeperator;
 }
 
@@ -323,12 +326,12 @@ float const THSegmentedControlAnimationDuration = 0.1f;
                              animations:^{
                                  seperatorView.backgroundColor = self.backgroundColor;
                              } completion:nil];
-        } else if (!isIverted && ![seperatorView.backgroundColor isEqual:self.highlightedBackgroundColor]) {
+        } else if (!isIverted && ![seperatorView.backgroundColor isEqual:self.tintColor]) {
             [UIView animateWithDuration:THSegmentedControlAnimationDuration
                                   delay:0.0
                                 options:UIViewAnimationOptionCurveEaseIn
                              animations:^{
-                                 seperatorView.backgroundColor = self.highlightedBackgroundColor;
+                                 seperatorView.backgroundColor = self.tintColor;
                              } completion:nil];
         }
     }
@@ -355,14 +358,14 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     return [UIColor whiteColor];
 }
 
-- (UIColor *)highlightedBackgroundColor {
+- (UIColor *)tintColor {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 50000
-    if(_highlightedBackgroundColor == nil) {
-        _highlightedBackgroundColor = [[[self class] appearance] highlightedBackgroundColor];
+    if(_tintColor == nil) {
+        _tintColor = [[[self class] appearance] tintColor];
     }
 #endif
-    if(_highlightedBackgroundColor != nil) {
-        return _highlightedBackgroundColor;
+    if(_tintColor != nil) {
+        return _tintColor;
     }
     return [UIColor colorWithRed:0.0f green:(122.0f/255.0f) blue:(255.0f/255.0f) alpha:1.0f];
 }
@@ -377,6 +380,16 @@ float const THSegmentedControlAnimationDuration = 0.1f;
         return _font;
     }
     return [UIFont fontWithName:@"HelveticaNeue-Light" size:14.0f];
+}
+
+#pragma mark - Tint Color Setter
+
+- (void)setTintColor:(UIColor *)tintColor
+{
+    if (_tintColor != tintColor) {
+        _tintColor = tintColor;
+        self.layer.borderColor = tintColor.CGColor;
+    }
 }
 
 #pragma mark - THMultipleSegmentSelectionDelegate
@@ -490,19 +503,20 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 #pragma mark - Appearance Setters
 
-- (void)setBackgroundColor:(UIColor *)backgroundColor
+- (void)setSegmentBackgroundColor:(UIColor *)segmentBackgroundColor
 {
-    if (_backgroundColor != backgroundColor) {
-        _backgroundColor = backgroundColor;
-        if (self.selected) self.textField.textColor = backgroundColor;
+    NSLog(@"%@", segmentBackgroundColor);
+    if (_segmentBackgroundColor != segmentBackgroundColor) {
+        _segmentBackgroundColor = segmentBackgroundColor;
+        if (self.selected) self.textField.textColor = segmentBackgroundColor;
     }
 }
 
-- (void)setHighlightedBackgroundColor:(UIColor *)highlightedBackgroundColor
+- (void)setSegmentHighlightedBackgroundColor:(UIColor *)segmentHighlightedBackgroundColor
 {
-    if (_highlightedBackgroundColor != highlightedBackgroundColor) {
-        _highlightedBackgroundColor = highlightedBackgroundColor;
-        if (!self.selected) self.textField.textColor = highlightedBackgroundColor;
+    if (_segmentHighlightedBackgroundColor != segmentHighlightedBackgroundColor) {
+        _segmentHighlightedBackgroundColor = segmentHighlightedBackgroundColor;
+        if (!self.selected) self.textField.textColor = segmentHighlightedBackgroundColor;
     }
 }
 
@@ -576,14 +590,15 @@ float const THSegmentedControlAnimationDuration = 0.1f;
         CGFloat toBlue = 0.0f;
         CGFloat toGreen = 0.0f;
         
-        [self.highlightedBackgroundColor getRed:&toRed green:&toGreen blue:&toBlue alpha:&toAlpha];
+        [self.segmentHighlightedBackgroundColor getRed:&toRed green:&toGreen blue:&toBlue alpha:&toAlpha];
         self.backgroundColor = [UIColor colorWithRed:toRed
                                                green:toGreen
                                                 blue:toBlue
                                                alpha:(float)[self colorWithFromValue:fromAlpha toValue:toAlpha]];
+//        self.textField.backgroundColor = [UIColor greenColor];
     } else {
         self.preSelected = NO;
-        UIColor *toColor = self.selected ? self.highlightedBackgroundColor : self.backgroundColor;
+        UIColor *toColor = self.selected ? self.segmentHighlightedBackgroundColor : self.backgroundColor;
         self.backgroundColor = toColor;
     }
 }
@@ -608,21 +623,22 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 - (void)toggleHighlightAnimation:(BOOL)highlighted
 {
+    NSLog(@"background color %@", self.segmentBackgroundColor);
     if (highlighted) {
         [UIView animateWithDuration:THSegmentedControlAnimationDuration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
-                             self.backgroundColor = self.highlightedBackgroundColor;
-                             self.textField.textColor = self.backgroundColor;
+                             self.textField.textColor = [UIColor whiteColor];
+                             self.backgroundColor = self.segmentHighlightedBackgroundColor;
                          } completion:nil];
     } else {
         [UIView animateWithDuration:THSegmentedControlAnimationDuration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
-                             self.backgroundColor = self.backgroundColor;
-                             self.textField.textColor = self.backgroundColor;
+                             self.backgroundColor = self.segmentBackgroundColor;
+                             self.textField.textColor = self.segmentHighlightedBackgroundColor;
                          } completion:nil];
     }
 }
