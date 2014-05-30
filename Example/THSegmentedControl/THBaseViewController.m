@@ -59,7 +59,7 @@
         [thControl setFrame:frame];
         thControl.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
         [thControl addTarget:self action:@selector(thControlChangedSegment:) forControlEvents:UIControlEventValueChanged | UIControlEventTouchUpInside];
-        [thControl setTintColor:[UIColor greenColor]];
+//        [thControl setTintColor:[UIColor greenColor]];
         thControl;
     });
     

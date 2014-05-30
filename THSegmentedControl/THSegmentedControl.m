@@ -581,7 +581,9 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     self.preSelected = NO;
     UITouch *touch = [[touches allObjects] lastObject];
     if (CGRectContainsPoint(self.boundingPreTouchRect, [touch locationInView:self])) {
-        if ([self.delegate allowSegment:self toHighlight:!self.selected withIndex:self.index]) self.selected = !self.selected;
+        if ([self.delegate allowSegment:self toHighlight:!self.selected withIndex:self.index]) {
+            self.selected = !self.selected;
+        }
     } else {
         [self changeSelectorToPreSelectionColor];
     }
@@ -592,25 +594,23 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 - (void)changeSelectorToPreSelectionColor
 {
     if (self.preSelected) {
-        if (!self.selected) {
-            CGFloat fromAlpha = 0.0f;
-            CGFloat toAlpha = 0.0f;
-            CGFloat toRed = 0.0f;
-            CGFloat toBlue = 0.0f;
-            CGFloat toGreen = 0.0f;
-            
-            [self.segmentHighlightedBackgroundColor getRed:&toRed green:&toGreen blue:&toBlue alpha:&toAlpha];
-            self.backgroundColor = [UIColor colorWithRed:toRed
-                                                   green:toGreen
-                                                    blue:toBlue
-                                                   alpha:(float)[self colorWithFromValue:fromAlpha toValue:toAlpha]];
-        } else {
-            self.textField.alpha =
-        }
+        
+        
+        CGFloat fromAlpha = 0.0f;
+        CGFloat toAlpha = 0.0f;
+        CGFloat toRed = 0.0f;
+        CGFloat toBlue = 0.0f;
+        CGFloat toGreen = 0.0f;
+        
+        [self.segmentHighlightedBackgroundColor getRed:&toRed green:&toGreen blue:&toBlue alpha:&toAlpha];
+        self.backgroundColor = [UIColor colorWithRed:toRed
+                                               green:toGreen
+                                                blue:toBlue
+                                               alpha:(float)[self colorWithFromValue:fromAlpha toValue:toAlpha]];
+        self.textField.alpha = 0.5;
     } else {
         self.preSelected = NO;
-        UIColor *toColor = self.selected ? self.segmentHighlightedBackgroundColor : self.backgroundColor;
-        self.backgroundColor = toColor;
+        self.textField.alpha = 1.0;
     }
 }
 
@@ -634,13 +634,12 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 - (void)toggleHighlightAnimation:(BOOL)highlighted
 {
-    NSLog(@"background color %@", self.segmentBackgroundColor);
     if (highlighted) {
-        self.textField.alpha = 1.0f;
         [UIView animateWithDuration:THSegmentedControlAnimationDuration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
+                             self.textField.alpha = 1.0f;
                              [self.textField toggleClippedImage];
                              self.backgroundColor = [UIColor clearColor];
                          } completion:nil];
@@ -649,6 +648,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
+                             self.textField.alpha = 1.0f;
                              [self.textField toggleClippedImage];
                              self.backgroundColor = self.segmentBackgroundColor;
                              self.textField.textColor = self.segmentHighlightedBackgroundColor;
