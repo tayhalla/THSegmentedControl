@@ -71,6 +71,14 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 @end
 
+@interface THLabel : UILabel
+
+@property (nonatomic, strong) UIImageView *maskedImageView;
+
+- (void)toggleClippedImage;
+
+@end
+
 @implementation THSegmentedControl
 
 @synthesize tintColor = _tintColor;
@@ -253,7 +261,6 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 {
     THSegmentedControlSegment *segLabel = [[THSegmentedControlSegment alloc] initWithFrame:frame];
     segLabel.title = text;
-    
     segLabel.segmentBackgroundColor = self.backgroundColor;
     segLabel.segmentHighlightedBackgroundColor = self.tintColor;
     segLabel.delegate = self;
@@ -427,7 +434,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 @interface THSegmentedControlSegment ()
 
 @property (nonatomic, strong) UIGestureRecognizer *tapMan;
-@property (nonatomic, strong) UILabel *textField;
+@property (nonatomic, strong) THLabel *textField;
 @property (nonatomic) CGRect boundingPreTouchRect;
 @property (nonatomic) BOOL preSelected;
 
@@ -481,8 +488,9 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     self.preSelected = NO;
     
     // Textfield init
-    self.textField = [[UILabel alloc] initWithFrame:self.bounds];
+    self.textField = [[THLabel alloc] initWithFrame:self.bounds];
     self.textField.backgroundColor = [UIColor clearColor];
+    self.textField.tintColor = self.segmentHighlightedBackgroundColor;
     self.textField.clipsToBounds = YES;
     self.textField.adjustsFontSizeToFitWidth = YES;
     self.textField.textAlignment = NSTextAlignmentCenter;
@@ -516,7 +524,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 {
     if (_segmentHighlightedBackgroundColor != segmentHighlightedBackgroundColor) {
         _segmentHighlightedBackgroundColor = segmentHighlightedBackgroundColor;
-        if (!self.selected) self.textField.textColor = segmentHighlightedBackgroundColor;
+        self.textField.tintColor = segmentHighlightedBackgroundColor;
     }
 }
 
@@ -584,18 +592,21 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 - (void)changeSelectorToPreSelectionColor
 {
     if (self.preSelected) {
-        CGFloat fromAlpha = 0.0f;
-        CGFloat toAlpha = 0.0f;
-        CGFloat toRed = 0.0f;
-        CGFloat toBlue = 0.0f;
-        CGFloat toGreen = 0.0f;
-        
-        [self.segmentHighlightedBackgroundColor getRed:&toRed green:&toGreen blue:&toBlue alpha:&toAlpha];
-        self.backgroundColor = [UIColor colorWithRed:toRed
-                                               green:toGreen
-                                                blue:toBlue
-                                               alpha:(float)[self colorWithFromValue:fromAlpha toValue:toAlpha]];
-//        self.textField.backgroundColor = [UIColor greenColor];
+        if (!self.selected) {
+            CGFloat fromAlpha = 0.0f;
+            CGFloat toAlpha = 0.0f;
+            CGFloat toRed = 0.0f;
+            CGFloat toBlue = 0.0f;
+            CGFloat toGreen = 0.0f;
+            
+            [self.segmentHighlightedBackgroundColor getRed:&toRed green:&toGreen blue:&toBlue alpha:&toAlpha];
+            self.backgroundColor = [UIColor colorWithRed:toRed
+                                                   green:toGreen
+                                                    blue:toBlue
+                                                   alpha:(float)[self colorWithFromValue:fromAlpha toValue:toAlpha]];
+        } else {
+            self.textField.alpha =
+        }
     } else {
         self.preSelected = NO;
         UIColor *toColor = self.selected ? self.segmentHighlightedBackgroundColor : self.backgroundColor;
@@ -625,18 +636,20 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 {
     NSLog(@"background color %@", self.segmentBackgroundColor);
     if (highlighted) {
+        self.textField.alpha = 1.0f;
         [UIView animateWithDuration:THSegmentedControlAnimationDuration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
-                             self.textField.textColor = [UIColor whiteColor];
-                             self.backgroundColor = self.segmentHighlightedBackgroundColor;
+                             [self.textField toggleClippedImage];
+                             self.backgroundColor = [UIColor clearColor];
                          } completion:nil];
     } else {
         [UIView animateWithDuration:THSegmentedControlAnimationDuration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
+                             [self.textField toggleClippedImage];
                              self.backgroundColor = self.segmentBackgroundColor;
                              self.textField.textColor = self.segmentHighlightedBackgroundColor;
                          } completion:nil];
@@ -644,4 +657,114 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 }
 
 @end
+
+#pragma mark - Transparent Text Label
+
+@implementation THLabel
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)toggleClippedImage
+{
+    if (self.maskedImageView.alpha == 0.0) {
+        self.maskedImageView.alpha = 1.0;
+    } else {
+        self.maskedImageView.alpha = 0.0;
+    }
+}
+
+- (void)commonInit
+{
+    [super setTextColor:[UIColor whiteColor]];
+    [super setBackgroundColor:[UIColor clearColor]];
+    
+    self.maskedImageView = [[UIImageView alloc] initWithFrame:self.bounds];
+    self.maskedImageView.alpha = 0.0f;
+    [self addSubview:self.maskedImageView];
+    
+    [self setOpaque:NO];
+}
+
+- (void)setTextColor:(UIColor *)textColor
+{
+    // Prevent outside setter for text color
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    
+    // The UISegmentedControl's UILabel's text is punched out (transparent)
+    // Making the same effect here
+    
+    UIGraphicsBeginImageContextWithOptions(rect.size, self.opaque, 0.0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [super drawRect:rect];
+   
+    CGContextConcatCTM(context, CGAffineTransformMake(1, 0, 0, -1, 0, CGRectGetHeight(rect)));
+    
+    CGImageRef currentImage = CGBitmapContextCreateImage(context);
+    CGImageRef currentMask = CGImageMaskCreate(CGImageGetWidth(currentImage),
+                                               CGImageGetHeight(currentImage),
+                                               CGImageGetBitsPerComponent(currentImage),
+                                               CGImageGetBitsPerPixel(currentImage),
+                                               CGImageGetBytesPerRow(currentImage),
+                                               CGImageGetDataProvider(currentImage),
+                                               CGImageGetDecode(currentImage),
+                                               CGImageGetShouldInterpolate(currentImage));
+    CFRelease(currentImage);
+    currentImage = NULL;
+    
+    CGContextSaveGState(context);
+    CGContextClipToMask(context, rect, currentMask);
+    
+    CFRelease(currentMask);
+    currentMask = NULL;
+
+	[self.tintColor set];
+    CGContextFillRect(context, rect);
+    
+    CGImageRef finalImage = CGBitmapContextCreateImage(context);
+    self.maskedImageView.image = [UIImage imageWithCGImage:finalImage];
+    
+    CGImageRelease(finalImage);
+    finalImage = NULL;
+    
+    CGContextRestoreGState(context);
+    UIGraphicsEndImageContext();
+    
+    [super setTextColor:self.tintColor];
+    [super drawRect:rect];
+}
+
+@end
+
+
+
+
+
 
