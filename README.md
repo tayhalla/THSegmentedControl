@@ -3,7 +3,7 @@ THSegmentedControl
 
 THSegmentedControl is a direct subclass of UIResponder and mimics the current functionality of UISegmentedControl with the added benefit of being able to perform multiple selection.
 
-{:.center}
+<div id="container">
 ![](https://raw.githubusercontent.com/tayhalla/THSegmentedControl/master/ReadmeAssets/THSegmentedControlUseRevised2.gif)
 ###### Lame example. I know. Suggestions on other multiple selection content welcome
 
@@ -49,6 +49,14 @@ License
 -------
 Released under the [MIT License](LICENSE).
 
-.center {
-  text-align: center;
+</div>
+
+#container {
+    height:100px;
+    line-height:100px;
+}
+
+#container img {
+    vertical-align:middle;
+    max-height:100%;
 }
