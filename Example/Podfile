@@ -3,6 +3,7 @@ platform :ios, '7.0'
 
 target "THSegmentedControl" do
   pod 'Reveal-iOS-SDK', '~> 1.0'
+  pod 'THSegmentedControl', :git => 'https://github.com/tayhalla/THSegmentedControl.git'
 end
 
 # Uncomment the following lines to add testing dependencies

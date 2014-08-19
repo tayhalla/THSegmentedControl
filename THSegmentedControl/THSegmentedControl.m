@@ -232,7 +232,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     CGFloat xOrigin;
     CGFloat width;
     
-    if (self.segments.count == 0) {
+    if (self.segments.count == 0 || self.segments.count == 1) {
         xOrigin = 0.0f;
         width = self.bounds.size.width;
     } else if ((self.segments.count - 1) == index) {

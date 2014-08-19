@@ -36,7 +36,7 @@
     CGFloat controlWidth            = self.view.bounds.size.width * 4.0f / 5.0f;
     CGFloat controlHeight           = 50.0f;
     
-    NSArray *segments = @[@"Rocky", @"TumTum", @"Colt"];
+    NSArray *segments = @[@"Rocky"];
     
     self.baseControl = ({
         UISegmentedControl *segControl = [[UISegmentedControl alloc] initWithItems:segments];
