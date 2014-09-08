@@ -611,6 +611,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     } else {
         self.preSelected = NO;
         self.textField.alpha = 1.0;
+        self.backgroundColor = [self segmentBackgroundColor];
     }
 }
 
