@@ -513,7 +513,6 @@ float const THSegmentedControlAnimationDuration = 0.1f;
 
 - (void)setSegmentBackgroundColor:(UIColor *)segmentBackgroundColor
 {
-    NSLog(@"%@", segmentBackgroundColor);
     if (_segmentBackgroundColor != segmentBackgroundColor) {
         _segmentBackgroundColor = segmentBackgroundColor;
         if (self.selected) self.textField.textColor = segmentBackgroundColor;
@@ -611,6 +610,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     } else {
         self.preSelected = NO;
         self.textField.alpha = 1.0;
+        self.backgroundColor = [self segmentBackgroundColor];
     }
 }
 
