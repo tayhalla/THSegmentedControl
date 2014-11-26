@@ -3,7 +3,6 @@ THSegmentedControl
 
 THSegmentedControl is a direct subclass of UIResponder and mimics the current functionality of UISegmentedControl with the added benefit of being able to perform multiple selection.
 
-![](https://raw.githubusercontent.com/tayhalla/THSegmentedControl/master/ReadmeAssets/THSegmentedControlUseRevised3.gif)
 ##Usage
 ###Alloc/Init it just like you would a normal UISegmentedControl:
 ``` objc
