@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "THSegmentedControl"
-  s.version          = "0.1.6"
+  s.version          = "0.1.7"
   s.summary          = "Multiple Selection for UISegmentedControl"
   s.description      = <<-DESC
   THSegmentedControl allows you to take in multiple selection and mirrors its next-of-kin, UISegmentedControl.

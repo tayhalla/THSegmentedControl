@@ -1,10 +1,22 @@
 PODS:
   - Reveal-iOS-SDK (1.0.4)
+  - THSegmentedControl (0.1.6)
 
 DEPENDENCIES:
   - Reveal-iOS-SDK (~> 1.0)
+  - THSegmentedControl (from `https://github.com/tayhalla/THSegmentedControl.git`)
+
+EXTERNAL SOURCES:
+  THSegmentedControl:
+    :git: https://github.com/tayhalla/THSegmentedControl.git
+
+CHECKOUT OPTIONS:
+  THSegmentedControl:
+    :commit: 2872f050290cc799286d01aad8047210fc385699
+    :git: https://github.com/tayhalla/THSegmentedControl.git
 
 SPEC CHECKSUMS:
   Reveal-iOS-SDK: d3c8e109d42219daaa7a6e1ad2de34f0bdbb7a88
+  THSegmentedControl: a22f2995ac12519eeb3b38d63bd8bf3dde8255a2
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0

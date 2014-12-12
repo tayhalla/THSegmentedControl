@@ -36,7 +36,7 @@
     CGFloat controlWidth            = self.view.bounds.size.width * 4.0f / 5.0f;
     CGFloat controlHeight           = 50.0f;
     
-    NSArray *segments = @[@"Rocky"];
+    NSArray *segments = @[@"iPod", @"iPhone", @"iPad", @"iWatch"];
     
     self.baseControl = ({
         UISegmentedControl *segControl = [[UISegmentedControl alloc] initWithItems:segments];
@@ -70,7 +70,7 @@
 - (void)initLabels
 {
     // Init the labels
-    NSString *defaultText = @"No Ninja Has Been Selected";
+    NSString *defaultText = @"No Device Has Been Selected";
     
     UIFont *labelFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f];
     CGFloat labelHeight = 50.0f;
@@ -84,7 +84,7 @@
                                   labelHeight);
         
         UILabel *label = [[UILabel alloc] initWithFrame:frame];
-        NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:@"Who was the best Little Ninja?"];
+        NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:@"Which device(s) do you own?"];
         
         label.attributedText = string;
         label.font = [UIFont boldSystemFontOfSize:18.0f];
@@ -139,7 +139,7 @@
 {
     NSInteger selectedSegmentIndex = baseSegmentedControl.selectedSegmentIndex;
     if (selectedSegmentIndex > -1) {
-        NSString *labelText = [NSString stringWithFormat:@"UISegmentedControl Says That %@ is The Best Ninja", [baseSegmentedControl titleForSegmentAtIndex:selectedSegmentIndex]];
+        NSString *labelText = [NSString stringWithFormat:@"UISegmentedControl Says That You Only Own %@", [baseSegmentedControl titleForSegmentAtIndex:selectedSegmentIndex]];
         self.baseLabel.text = labelText;
     }
 }
@@ -149,7 +149,7 @@
 {
     NSOrderedSet *orderedIndexes = thSegmentedControl.selectedIndexes;
     if (orderedIndexes.count > 1) {
-        NSString *title = @"THSegmentedControl Says That The Best Ninjas are";
+        NSString *title = @"THSegmentedControl Says That You Own";
         for (int i = 0; i < orderedIndexes.count; i++) {
             NSInteger index = [[orderedIndexes objectAtIndex:i] integerValue];
             if (i == (orderedIndexes.count - 1)) {
@@ -164,9 +164,9 @@
         }
         self.thLabel.text = title;
     } else if (orderedIndexes.count == 1) {
-        self.thLabel.text = [NSString stringWithFormat:@"THSegmentedControl Says That The Best Ninja is %@!", [thSegmentedControl titleForSegmentAtIndex:[orderedIndexes.lastObject integerValue]]];
+        self.thLabel.text = [NSString stringWithFormat:@"THSegmentedControl Says That you own %@!", [thSegmentedControl titleForSegmentAtIndex:[orderedIndexes.lastObject integerValue]]];
     } else {
-        self.thLabel.text = @"You Don't Have A Favorite Ninja... :(";
+        self.thLabel.text = @"You Don't Have Any Devices... :(";
     }
 }
 
