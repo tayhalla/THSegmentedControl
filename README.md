@@ -1,8 +1,6 @@
 THSegmentedControl
 ========
-<p align="center">
-  ![demo](Example/SegmentedControl.gif)
-</p>
+![demo](Example/SegmentedControl.gif)
 
 THSegmentedControl is a direct subclass of UIResponder and mimics the current functionality of UISegmentedControl with the added benefit of being able to perform multiple selection.
 
