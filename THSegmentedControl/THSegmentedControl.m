@@ -265,6 +265,7 @@ float const THSegmentedControlAnimationDuration = 0.1f;
     segLabel.segmentHighlightedBackgroundColor = self.tintColor;
     segLabel.delegate = self;
     [segLabel setFont:self.font];
+    [self.segmentLabels addObject:segLabel];
     return segLabel;
 }
 
